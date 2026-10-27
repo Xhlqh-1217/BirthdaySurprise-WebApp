@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My Love!</title>
+    <title>生日快乐 李秋函大王❤!</title>
+
     <style>
         /* Pink Love Theme */
         body {
@@ -238,6 +239,21 @@
                 opacity: 0;
             }
         }
+
+        /* 照片旁边粉色字体的样式 */
+        .photo-text {
+            color: #ff69b4 !important;      /* 粉色 */
+            display: block !important;      /* 强制作为块级元素显示 */
+            position: relative !important;  /* 回到正常排版，不被图片盖住 */
+            z-index: 10;                    /* 确保在最上层 */
+            text-align: center;  /* 居中显示 */
+            font-size: 15px;     /* 字体大小，觉得小可以改成 16px */
+            font-weight: bold;   /* 加粗，如果不喜欢可以删掉这行 */
+            margin-top: 10px;     /* 文字和照片之间的距离 */
+            margin-bottom: 20px; /* 文字和下方照片的距离 */
+            ont-family: "Microsoft YaHei", sans-serif; /* 使用微软雅黑字体*/
+            clear: both;                    /* 清除浮动 */ 
+        }
     </style>
 </head>
 
@@ -246,76 +262,86 @@
 
     <div class="container">
         <header>
-            <h1>Happy Birthday My Love! <span class="heart">❤</span></h1>
-            <p>To the most beautiful person in the world...</p>
-            <div class="couple-name">Us Together</div>
+            <h1>李秋函大王 生日快乐! <span class="heart">❤</span></h1>
+            <p>函大王20岁生日的专属网站</p>
+            <div class="couple-name">🎂</div>
         </header>
 
         <div class="love-letter">
-            <h2>My Dearest,</h2>
-            <p>On this special day, I want to take a moment to tell you how incredibly lucky I am to have you in my
-                life. From the moment we met, you've brought nothing but joy, love, and happiness.</p>
 
-            <p>Your smile brightens my darkest days, your laugh is my favorite melody, and your love is the greatest
-                gift I've ever received. Every moment with you feels like a beautiful dream I never want to wake up
-                from.</p>
+            
+            <h2>亲爱的李秋函：</h2>
+            <p>生日快乐呀小宝贝, 今天是我和你一起过的第二个生日啦！
+            好幸运能在茫茫人海中和你相遇，携手走过第二个春夏秋冬，也好幸福这么重要的日子里能和你一起，见证你的又一次成长。</p>
 
-            <p>You're not just my partner - you're my best friend, my companion in adventure, and my greatest joy. I cherish every memory we've created together.</p>
+            <p>我的文笔不好写不出函大王那样动人的篇章，只好想到什么就写什么啦，
+            回顾这一年来和你走过的点点滴滴，有过争吵，有过欢喜，我们都为了和彼此更好的磨合或多或少的做出了许许多多的改变，
+            但唯一不变的是对选择彼此的坚定和那颗深爱彼此的❤</span></p>
 
-            <p>On your birthday, I wish you all the happiness, love, and success in the world.</p>
+            <p>……（此处省略♾️字，内容为送给函大王的甜言蜜语）</p>
 
-            <p>Forever yours,</p>
-            <p>Your Love <span class="heart">❤</span></p>
+            <p>最最重要的还是今天是函大王的生日啦，祝愿李秋函大王生日快乐，虽然今天是函大王的20岁生日，
+            但是在我看来函大王永远都是18岁，永远年轻漂亮美丽动人温柔善良落落大方≧ω≦
+            </p>
+
+            <p>永远爱你的,</p>
+            <p>刘云飞 <span class="heart">❤</span></p>
         </div>
 
-        <h2>Our Beautiful Journey Together</h2>
+        <h2>我们的特别小照片</h2>
         <div class="photo-gallery">
             <div class="photo">
-                <img src="photos/memory1.jpg" alt="Special moment">
+                <img src="D:\love\memory1.jpg" alt="我期待的不是雪而是有你...">
+                <p class="photo-text">我期待的不是雪而是有你...</p >
             </div>
             <div class="photo">
-                <img src="photos/memory2.jpg" alt="Happy times">
+                <img src="D:\love\memory2.jpg" alt="第一次在教室约会牵小手">
+                <p class="photo-text">第一次在教室约会牵小手</p >
             </div>
             <div class="photo">
-                <img src="photos/memory3.jpg" alt="Celebration">
+                <img src="D:\love\memory3.jpg" alt="第一次外面约会美味烧烤">
+                <p class="photo-text">第一次外面约会美味烧烤</p >
             </div>
             <div class="photo">
-                <img src="photos/memory4.jpg" alt="Adventure">
+                <img src="D:\love\memory4.jpg" alt="第一次过生日偷拍的美照">
+                <p class="photo-text">第一次过生日偷拍的美照</p >
             </div>
             <div class="photo">
-                <img src="photos/memory5.jpg" alt="Together">
+                <img src="D:\love\memory5.jpg" alt="一周年一起做的小戒指">
+                <p class="photo-text">一周年一起做的小戒指</p >
             </div>
             <div class="photo">
-                <img src="photos/memory6.jpg" alt="Love">
+                <img src="D:\love\memory6.jpg" alt="还有我们相爱的第521天也是5月21日">
+                <p class="photo-text">还有我们相爱的第521天也是5月21日</p >
             </div>
         </div>
 
-        <h2>Our Special Moments</h2>
+        <h2>我们的特别小时刻</h2>
         <div class="memory-box">
-            <div class="memory-date">The Day We Met</div>
-            <p>I'll never forget the first time I saw you. That moment changed my life forever.</p>
+            <div class="memory-date">相遇 2024/11/19</div>
+            <p>我永远不会忘记的那天你加了我微信从我手里买走那几本哈利波特，可爱的函宝蛋还夹着嗓子和我讲“你人也太好了吧”，后来就穿着小睡衣出来拿书啦~</p>
         </div>
 
         <div class="memory-box">
-            <div class="memory-date">Our Special Day</div>
-            <p>The most beautiful moment when we became us. I will treasure that memory always.</p>
+            <div class="memory-date">相识 2024/12/03</div>
+            <p>更忘不掉那个夜晚，孩子给我发微信问我“哥们能问句你是为啥卖这套哈利波特嘛”，随后命运的齿轮⚙开始转动......</p>
         </div>
 
         <div class="surprise-container">
-            <button class="btn" id="surpriseBtn">Click for Your Special Gift!</button>
+            <button class="btn" id="surpriseBtn">点击打开飞的诺言</button>
             <div id="surpriseMessage">
-                <h3>My Promise to You</h3>
-                <p>No matter what happens, no matter where life takes us, I promise to always be by your side.</p>
-                <p>I can't wait to celebrate many more birthdays with you.</p>
+                <h3>小小飞在此立誓言</h3>
+                <p>以后函大王的每个生日都会有我守护❤</p>
+                <p>永远和函大王好，和函大王幸福一辈子</p>
                 <p class="heart">❤ ❤ ❤</p>
-                <p>Love always,<br>Your Partner</p>
+                <p>永远爱你<br>   ——函的飞</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>Made with <span class="heart">❤</span> with love</p>
-        <p>Happy Birthday! April 21, 2024</p>
+        <p>LQH <span class="heart">❤</span> LYF</p>
+        <p>Happy Birthday! November 02, 2026</p>
     </footer>
 
     <script>
