@@ -74,11 +74,12 @@
 
         .photo {
             position: relative;
-            overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 250px;
+            min-height: 250px;
             transition: transform 0.3s;
+            background-color: #fff;
+            padding-bottom: 10px;
         }
 
         .photo:hover {
@@ -87,9 +88,10 @@
 
         .photo img {
             width: 100%;
-            height: 100%;
+            height: 250px;
             object-fit: cover;
             transition: transform 0.5s;
+            
         }
 
         .photo:hover img {
@@ -242,7 +244,7 @@
 
         /* 照片旁边粉色字体的样式 */
         .photo-text {
-            color: #ff69b4 !important;      /* 粉色 */
+            color: #ff69b4 !important;      
             display: block !important;      /* 强制作为块级元素显示 */
             position: relative !important;  /* 回到正常排版，不被图片盖住 */
             z-index: 10;                    /* 确保在最上层 */
@@ -251,7 +253,6 @@
             font-weight: bold;   /* 加粗，如果不喜欢可以删掉这行 */
             margin-top: 10px;     /* 文字和照片之间的距离 */
             margin-bottom: 20px; /* 文字和下方照片的距离 */
-            ont-family: "Microsoft YaHei", sans-serif; /* 使用微软雅黑字体*/
             clear: both;                    /* 清除浮动 */ 
         }
     </style>
@@ -262,7 +263,8 @@
 
     <div class="container">
         <header>
-            <h1>李秋函大王 生日快乐! <span class="heart">❤</span></h1>
+            <h1>李秋函大王</h1>
+            <h1>生日快乐! <span class="heart">❤</span></h1>
             <p>函大王20岁生日的专属网站</p>
             <div class="couple-name">🎂</div>
         </header>
@@ -291,27 +293,27 @@
         <h2>我们的特别小照片</h2>
         <div class="photo-gallery">
             <div class="photo">
-                <img src="D:\love\memory1.jpg" alt="我期待的不是雪而是有你...">
+                <img src="love\memory1.jpg" alt="我期待的不是雪而是有你...">
                 <p class="photo-text">我期待的不是雪而是有你...</p >
             </div>
             <div class="photo">
-                <img src="D:\love\memory2.jpg" alt="第一次在教室约会牵小手">
+                <img src="love\memory2.jpg" alt="第一次在教室约会牵小手">
                 <p class="photo-text">第一次在教室约会牵小手</p >
             </div>
             <div class="photo">
-                <img src="D:\love\memory3.jpg" alt="第一次外面约会美味烧烤">
+                <img src="love\memory3.jpg" alt="第一次外面约会美味烧烤">
                 <p class="photo-text">第一次外面约会美味烧烤</p >
             </div>
             <div class="photo">
-                <img src="D:\love\memory4.jpg" alt="第一次过生日偷拍的美照">
+                <img src="love\memory4.jpg" alt="第一次过生日偷拍的美照">
                 <p class="photo-text">第一次过生日偷拍的美照</p >
             </div>
             <div class="photo">
-                <img src="D:\love\memory5.jpg" alt="一周年一起做的小戒指">
+                <img src="love\memory5.jpg" alt="一周年一起做的小戒指">
                 <p class="photo-text">一周年一起做的小戒指</p >
             </div>
             <div class="photo">
-                <img src="D:\love\memory6.jpg" alt="还有我们相爱的第521天也是5月21日">
+                <img src="love\memory6.jpg" alt="还有我们相爱的第521天也是5月21日">
                 <p class="photo-text">还有我们相爱的第521天也是5月21日</p >
             </div>
         </div>
@@ -330,7 +332,7 @@
         <div class="surprise-container">
             <button class="btn" id="surpriseBtn">点击打开飞的诺言</button>
             <div id="surpriseMessage">
-                <h3>小小飞在此立誓言</h3>
+                <h3>小小飞在此立下誓言</h3>
                 <p>以后函大王的每个生日都会有我守护❤</p>
                 <p>永远和函大王好，和函大王幸福一辈子</p>
                 <p class="heart">❤ ❤ ❤</p>
@@ -413,6 +415,21 @@
                 }
             }, 3000);
         };
+        // 监听按钮点击事件
+        document.getElementById('surpriseBtn').addEventListener('click', function() {
+            // 获取隐藏的 div
+            var msg = document.getElementById('surpriseMessage');
+            // 如果当前是隐藏的，就显示出来；如果是显示的，就隐藏（点击切换效果）
+            if (msg.style.display === 'none' || msg.style.display === '') {
+                msg.style.display = 'block';
+                this.style.display = 'none'; // 点击后按钮消失，显得更神秘
+                // 尝试触发彩带特效（如果有的话）
+                if (typeof confetti === 'function') {
+                    confetti();
+                }
+
+            }
+        });
     </script>
 </body>
 
